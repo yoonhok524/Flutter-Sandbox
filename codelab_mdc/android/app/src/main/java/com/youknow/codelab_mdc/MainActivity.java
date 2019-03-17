@@ -1,4 +1,4 @@
-package com.youknow.codelab_mdc101;
+package com.youknow.codelab_mdc;
 
 import android.os.Bundle;
 import io.flutter.app.FlutterActivity;

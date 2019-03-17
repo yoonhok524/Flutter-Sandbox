@@ -1,4 +1,4 @@
-# codelab_mdc101
+# codelab_mdc
 
 A new Flutter application.
 

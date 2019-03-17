@@ -1,5 +1,5 @@
-import 'package:codelab_mdc101/home.dart';
-import 'package:codelab_mdc101/login.dart';
+import 'package:codelab_mdc/home.dart';
+import 'package:codelab_mdc/login.dart';
 import 'package:flutter/material.dart';
 
 class TodoApp extends StatelessWidget {
