@@ -1,3 +1,4 @@
+import 'package:app_bar_navigation_sample/home_widget.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -16,14 +17,5 @@ class MyApp extends StatelessWidget {
       ),
       home: const HomeWidget(),
     );
-  }
-}
-
-class HomeWidget extends StatelessWidget {
-  const HomeWidget({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Container();
   }
 }
