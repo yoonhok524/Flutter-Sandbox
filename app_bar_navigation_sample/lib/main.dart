@@ -1,3 +1,4 @@
+import 'package:app_bar_navigation_sample/about_widget.dart';
 import 'package:app_bar_navigation_sample/home_widget.dart';
 import 'package:flutter/material.dart';
 
@@ -15,7 +16,11 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const HomeWidget(),
+      initialRoute: '/',
+      routes: {
+        '/': (context) => const HomeWidget(),
+        '/about': (context) => const AboutWidget(),
+      },
     );
   }
 }

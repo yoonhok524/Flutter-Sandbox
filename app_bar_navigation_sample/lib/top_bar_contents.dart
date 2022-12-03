@@ -37,7 +37,9 @@ class _TopBarContentsState extends State<TopBarContents> {
                       _isHovering[0] = value;
                     });
                   },
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.of(context).pushNamed('/');
+                  },
                   child: Column(
                     mainAxisSize: MainAxisSize.min,
                     children: [
@@ -69,7 +71,9 @@ class _TopBarContentsState extends State<TopBarContents> {
                       _isHovering[1] = value;
                     });
                   },
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.of(context).pushNamed('/about');
+                  },
                   child: Column(
                     mainAxisSize: MainAxisSize.min,
                     children: [

@@ -3,14 +3,14 @@ import 'package:app_bar_navigation_sample/responsive.dart';
 import 'package:app_bar_navigation_sample/top_bar_contents.dart';
 import 'package:flutter/material.dart';
 
-class HomeWidget extends StatefulWidget {
-  const HomeWidget({super.key});
+class AboutWidget extends StatefulWidget {
+  const AboutWidget({super.key});
 
   @override
-  State<HomeWidget> createState() => _HomeWidgetState();
+  State<AboutWidget> createState() => _AboutWidgetState();
 }
 
-class _HomeWidgetState extends State<HomeWidget> {
+class _AboutWidgetState extends State<AboutWidget> {
   @override
   Widget build(BuildContext context) {
     var screenSize = MediaQuery.of(context).size;
@@ -31,7 +31,7 @@ class _HomeWidgetState extends State<HomeWidget> {
               child: TopBarContents(),
             ),
       body: Container(
-        child: Text('home'),
+        child: Text('about'),
       ),
       drawer: MenuDrawer(),
     );

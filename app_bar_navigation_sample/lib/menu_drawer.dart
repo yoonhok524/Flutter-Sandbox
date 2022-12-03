@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
 
 class MenuDrawer extends StatelessWidget {
   const MenuDrawer({super.key});
@@ -14,14 +12,33 @@ class MenuDrawer extends StatelessWidget {
           padding: const EdgeInsets.all(16.0),
           child: Column(
               mainAxisAlignment: MainAxisAlignment.start,
+              mainAxisSize: MainAxisSize.max,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                InkWell(
-                  child: Text('Home'),
+                TextButton(
+                  onPressed: () {
+                    Navigator.of(context).pushNamed('/');
+                  },
+                  style: TextButton.styleFrom(
+                      alignment: Alignment.centerLeft,
+                      minimumSize: const Size.fromHeight(52)),
+                  child: const Text(
+                    'Home',
+                    style: TextStyle(color: Colors.white),
+                  ),
                 ),
-                InkWell(
-                  child: Text('About'),
-                )
+                TextButton(
+                  onPressed: () {
+                    Navigator.of(context).pushNamed('/about');
+                  },
+                  style: TextButton.styleFrom(
+                      alignment: Alignment.centerLeft,
+                      minimumSize: const Size.fromHeight(52)),
+                  child: const Text(
+                    'About',
+                    style: TextStyle(color: Colors.white),
+                  ),
+                ),
               ]),
         ),
       ),
